@@ -1,0 +1,8 @@
+list = []
+for i in range(10):
+	list.append(i)
+list[::2] = list[::2][::-1]
+print(list)
+
+Вывод:
+[8, 1, 6, 3, 4, 5, 2, 7, 0, 9]
