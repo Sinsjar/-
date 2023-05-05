@@ -1,5 +1,3 @@
-
-
 class Tree:
     def __init__(self, data):
         self.left = None
@@ -9,8 +7,10 @@ class Tree:
     def print_tree(self):
         if self.left:
             self.left.print_tree()
+            print("LEFT \n")
         print(self.data)
         if self.right:
+            print("RIGHT")
             self.right.print_tree()
  
     def insert(self, val):
@@ -25,4 +25,10 @@ class Tree:
             else:
                 self.right = Tree(val)
 
-#!t = Tree(Tree("a", "b"), Tree("c", "d"))
+root = Tree(12)
+root.insert(1)
+root.insert(13)
+root.insert(33)
+root.insert(10)
+root.print_tree()
+
